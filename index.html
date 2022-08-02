@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+               <form onsubmit="gettingData(); return false">
+
+               <label for="fName" class="label">First Name : </label><br>
+               <input type="text" id="fName" placeholder="Enter Your First Name" required><br><br>
+
+               <label for="lName" class="label">Last Name : </label><br>
+               <input type="text" id="lName" placeholder="Enter Your Last Name" required><br><br>
+
+               <label for="email" class="label">Email : </label><br> 
+               <input type="email" name="email" id="email" placeholder="Enter Your Email" required><br><br>
+
+               <label for="cnic" class="label">CNIC : </label><br> 
+               <input type="cnic" name="cnic" id="cnic" placeholder="Enter Your CNIC" minlength="13" maxlength="13" required><br><br>
+
+               <label for="language" class="label">Select Language : </label><br>
+               <input type="radio" name="option" id="English" class="radio" required><label for="English">English</label><input type="radio" name="option" required class="radio" id="Sindhi"><label for="Sindhi">Sindhi</label><input type="radio" name="option" class="radio" required id="Urdu"><label for="Urdu">Urdu</label><br><br> 
+
+               <label for="contactNo" class="label">Contact No : </label><br>
+               <input type="tel" name="number" id="contactNo" placeholder="Enter Your Phone Number" minlength="11" maxlength="13" required><br><br>
+
+               <label for="newPass" class="label">Create Password : </label><br>
+               <input type="password" name="password" id="newPass" placeholder="Create A New Password" minlength="8" maxlength="20" required><br><br>
+
+               <label for="confirmPass" class="label">Confirm Password : </label><br>
+               <input type="password" name="password" id="confirmPass" placeholder="Re-type New Password" minlength="8" maxlength="20" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+ </div>
+
+ <h1 id="h1"></h1>
+ <h1 id="h2"></h1>
+ <h1 id="h3"></h1>
+ <h1 id="h4"></h1>
+ <h1 id="h5"></h1>
+ <h1 id="h6"></h1>
+ <h1 id="h7"></h1>
+    
+    <!-- <input type="text" id="name">
+    <button id="submit" onclick="userName()">submit</button>
+    <h4 id="userName">
+
+    </h4> -->
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
